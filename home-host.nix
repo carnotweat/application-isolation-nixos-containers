@@ -6,7 +6,7 @@
   # Example user configuration that should not be present in container.
   programs.git = {
     enable = true;
-    userName = "My User";
+    userName = "pub";
   };
 
   programs.ssh = {

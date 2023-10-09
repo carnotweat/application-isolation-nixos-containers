@@ -12,7 +12,8 @@
       modifier = "Mod1";
 
       # And use terminal with some sane defaults.
-      terminal = "alacritty";
+      terminal = "sakura";
+      editor = "emacs";
 
       # Application launcher.
       menu = "${pkgs.wofi}/bin/wofi --show run";
@@ -22,7 +23,9 @@
   };
 
   home.packages = with pkgs; [
-    alacritty
+    sakura
+    #nyxt
+    #emacs
   ];
 
   gtk.enable = true;

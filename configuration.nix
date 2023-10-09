@@ -9,5 +9,5 @@
   networking.hostId = "12345678";
   networking.hostName = "isolationExample";
 
-  system.stateVersion = "21.05";
+  system.stateVersion = "23.05";
 }

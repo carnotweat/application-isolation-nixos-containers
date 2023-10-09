@@ -1,3 +1,5 @@
 ### Application Isolation using NixOS Containers
 
-Source code for the [blog post](https://msucharski.eu/posts/application-isolation-nixos-containers/).
+very early steps to qubes , spectrum [^1] and selfhosted apps [^2] .
+[^1]: learn
+[^2]: nixops and deploy

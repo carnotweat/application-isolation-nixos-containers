@@ -1,7 +1,7 @@
 { pkgs, ... }:
 
 {
-  users.users.myuser = {
+  users.users.pub = {
     uid = 1000;
     isNormalUser = true;
     initialPassword = "secret";

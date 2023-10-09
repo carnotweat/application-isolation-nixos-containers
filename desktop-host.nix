@@ -3,7 +3,7 @@
 let
   home-manager = builtins.fetchGit {
     url = "https://github.com/rycee/home-manager.git";
-    ref = "release-21.05";
+    ref = "release-23.05";
     rev = "35a24648d155843a4d162de98c17b1afd5db51e4";
   };
 in {
@@ -14,13 +14,13 @@ in {
 
   home-manager = {
     useGlobalPkgs = true;
-    users.myuser = {
+    users.pub = {
       imports = [ ./home-host.nix ];
     };
   };
 
   environment.systemPackages = let
-    userName = "myuser";
+    userName = "pub";
     containerName = "graphicalExample";
     hostLauncher = pkgs.writeScriptBin "${containerName}-launcher" ''
       #!${pkgs.stdenv.shell}
@@ -58,14 +58,14 @@ in {
       ];
 
       hardware.opengl = {
-        enable = true;
+        enable = false;
         extraPackages = hostCfg.hardware.opengl.extraPackages;
       };
 
       users.users."${userName}".extraGroups = lib.mkForce [];
 
       environment.systemPackages = with pkgs; [
-        vim
+        emacs
         jetbrains.idea-community
       ];
 

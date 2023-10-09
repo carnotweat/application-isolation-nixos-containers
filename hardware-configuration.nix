@@ -5,7 +5,7 @@
   virtualisation = {
     writableStoreUseTmpfs = false;
 
-    memorySize = "2g";
+    memorySize = "20g";
     qemu = {
       options = [
         "-vga virtio"
@@ -14,7 +14,7 @@
     };
   };
 
-  hardware.opengl = {
-    enable = true;
+   hardware.opengl = {
+     enable = false;
   };
 }
